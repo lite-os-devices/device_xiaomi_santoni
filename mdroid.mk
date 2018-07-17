@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/mdroid/config/common_full_phone.mk)
 
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := santoni
-PRODUCT_NAME := aicp_santoni
+PRODUCT_NAME := mdroid_santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
 PRODUCT_MANUFACTURER := Xiaomi
