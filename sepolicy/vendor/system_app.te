@@ -1,0 +1,4 @@
+add_service(system_app, goodix_fingerprint_service)
+get_prop(system_app, qemu_hw_mainkeys_prop)
+allow system_app sysfs_torch:file rw_file_perms;
+allow system_app sysfs_torch:dir search;

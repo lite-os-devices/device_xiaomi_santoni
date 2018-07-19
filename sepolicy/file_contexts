@@ -32,3 +32,7 @@
 
 # Bluetooth
 /(vendor|system/vendor)/bin/hci_qcomm_init	u:object_r:qti_init_shell_exec:s0
+
+# Torch
+/sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness          u:object_r:sysfs_torch:s0
+/sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness          u:object_r:sysfs_torch:s0
