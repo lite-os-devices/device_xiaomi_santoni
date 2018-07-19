@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/mdroid/config/common_full_phone.mk)
+# Inherit some common LiteOS stuff.
+$(call inherit-product, vendor/lite/lite.mk)
 
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := santoni
-PRODUCT_NAME := mdroid_santoni
+PRODUCT_NAME := lite_santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
 PRODUCT_MANUFACTURER := Xiaomi
@@ -39,12 +39,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.4.0.NAMMIFA:user/release-keys
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hemant Sharma (hemantbeast)"
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
--include vendor/aicp/configs/bootanimation.mk
+-include vendor/lite/configs/bootanimation.mk
 
