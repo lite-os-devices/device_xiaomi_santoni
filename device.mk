@@ -343,5 +343,9 @@ PRODUCT_COPY_FILES += \
 	
 # Lite-OS stuff
 PRODUCT_PACKAGES += \
-    DeviceSettings 
+    DeviceSettings \
+	XiaomiParts
 
+# Google Pixel stuff
+ 	PRODUCT_COPY_FILES += \
+    device/xiaomi/santoni/Google/system/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml
