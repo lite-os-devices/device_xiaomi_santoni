@@ -15,6 +15,8 @@
 #
 ALLOW_MISSING_DEPENDENCIES=true
 
+WITH_LITE_CHARGER := false
+
 DEVICE_PATH := device/xiaomi/santoni
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
