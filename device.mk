@@ -144,10 +144,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
