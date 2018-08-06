@@ -230,6 +230,7 @@ ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 wifi.interface=wlan0
 
 # ADB
+ro.secure=0
 ro.adb.secure=0
 persist.service.debuggable=1
 persist.service.adb.enable=1
